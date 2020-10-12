@@ -4,36 +4,43 @@ In this exercise, we will create...
 
 ## Exercise 2.1 - Setup Document Information Extraction Service and UI
 
-After completing these steps you will have created...
+After completing below step you will have access for Document Information Extraction Service and its UI Application
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
-
-
+1. Follow this [tutorial](https://developers-qa.sap.com/tutorials/cp-aibus-dox-service-instance-booster.html)
+2. Follow this [tutorial](https://developers-qa.sap.com/tutorials/cp-aibus-dox-ui-sub.html)
 
 ## Exercise 2.2 - Upload a document for Extraction using UI Application
 
-After completing these steps you will have...
+After completing these steps your will have information extracted from documents.
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
+1.	In the top right, click + (Upload a new document).
+<br>![](/exercises/ex2/images/02_02_1.png)
 
-```
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+2.	In the Select Document screen, drop files directly or click + to upload one or more document files.
+<br>![](/exercises/ex2/images/02_02_2.png)
+
+3. Select the Document Type **Invoice**. 
+<br>![](/exercises/ex2/images/02_02_3.png)
+
+4. Click **Step 2**.
+<br>![](/exercises/ex2/images/02_02_4.png)
+
+5. In Step 2, select the header fields you want to extract from the invoice documents you uploaded in the previous step. Click Step 3.
+<br>![](/exercises/ex2/images/02_02_5.png)
+
+6. In Step 3, select the line items you want to extract from the documents you uploaded in the previous step. Click Review.
+<br>![](/exercises/ex2/images/02_02_6.png)
+
+7. Review your selection. Click Edit if you want to change anything. Click Confirm.
+<br>![](/exercises/ex2/images/02_02_7.png)
+
+8. You see the Document Name, Upload Date and Status of the documents you have just uploaded.
+<br>![](/exercises/ex2/images/02_02_8.png)
+
+Status changes from PENDING to READY. This means the selected header fields and line items have been extracted, and the extraction results are ready to be validated and changed if necessary. If status changes from PENDING to FAILED, this means it was not possible to get the extraction results, and you need to upload the document once again.
+<br>![](/exercises/ex2/images/02_02_9.png)
+
 
 ## Exercise 2.3 - Visualize and Correct Extraction Results on UI Application
 
