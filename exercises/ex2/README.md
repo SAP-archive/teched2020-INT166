@@ -102,10 +102,7 @@ In the service key you created for Document Information Extraction in the previo
 2. To be able to use the Swagger UI endpoints you need to authorize yourself. In the top right corner, click **Authorize**.
 <br>![](/exercises/ex2/images/02_05_2.png)
 
-3. Get the access_token value created in the previous exercise: Get Auth Token to use Document Information Extraction Rest API, then add **bearer** in front of it, and enter in the **Value** field.
-```
-bearer <access_token>
-```
+3. Get the access_token value created in the previous exercise: Get Auth Token to use Document Information Extraction Rest API, then add **bearer** in front of it, and enter in the **Value** field. eg. `bearer <access_token>`
 <br>![](/exercises/ex2/images/02_05_3.png)
 
 4. Click **Authorize**, and then click **Close**.
