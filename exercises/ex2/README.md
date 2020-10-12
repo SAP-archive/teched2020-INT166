@@ -43,7 +43,6 @@ After completing these steps your will have information extracted from documents
 
 8. You see the Document Name, Upload Date and Status of the documents you have just uploaded.
 <br>![](/exercises/ex2/images/02_02_8.png)
-
 Status changes from PENDING to READY. This means the selected header fields and line items have been extracted, and the extraction results are ready to be validated and changed if necessary. If status changes from PENDING to FAILED, this means it was not possible to get the extraction results, and you need to upload the document once again.
 <br>![](/exercises/ex2/images/02_02_9.png)
 
