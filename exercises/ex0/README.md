@@ -1,10 +1,10 @@
-# Level 1 Heading
+# Level 1 Getting Started
 
-In this exercise, you will...
+In this exercise, you will Setup CF trail account to get try Document Classification and Document Information Extraction Service 
 
-## Level 2 Heading
+## Level 2 Create Trail Account
 
-After completing these steps you will have....
+After completing these steps you will have trail account where you can use DOX and DC
 
 1.	Click here.
 <br>![](/exercises/ex0/images/00_00_0010.png)
@@ -22,5 +22,5 @@ After completing these steps you will have....
 
 ## Summary
 
-Now that you have ... 
+Now that you have create a trail account
 Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)

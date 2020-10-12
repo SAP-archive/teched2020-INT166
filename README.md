@@ -1,28 +1,31 @@
-# INT166 - Classify and Extract Business Document Information
+# INT166 - Classify Business Documents and Extract Information
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2020 session called INT166 - Classify Business Documents and Extract Information.
 
 ## Overview
 
-This session introduces attendees to...
+This session introduces attendees to SAP AI Business Services: Document Classification and Document Information Extraction
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository are
+- Attendee must be familiar with using Rest API, Python language and Jupiter Notebook.
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 1 - Document Classification](exercises/ex1/)
+    - [Exercise 1.1 - Setup Document Classification Service](exercises/ex1#exercise-11-sub-exercise-1-description)
+    - [Exercise 1.2 - Upload Documents to classify](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.3 - Train your own Document Classification ML model](exercises/ex1#exercise-12-sub-exercise-2-description)
+- [Exercise 2 - Document Information Extraction](exercises/ex2/)
+    - [Exercise 2.1 - Setup Document Information Extraction Service and UI](exercises/ex2#exercise-21-sub-exercise-1-description)
+    - [Exercise 2.2 - Upload a document for Extraction using UI Application](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.3 - Visualize and Correct Extraction Results on UI Application](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.4 - Upload Data through Rest API](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.5 - Upload Document through Rest API to encrich the extraction results with Supplier Data](exercises/ex2#exercise-22-sub-exercise-2-description)
 
 
 **OR** Link to the PDF document stored in your github repo for example...

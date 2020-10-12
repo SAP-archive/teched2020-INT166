@@ -1,8 +1,8 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 - Document Information Extraction
 
 In this exercise, we will create...
 
-## Exercise 2.1 Sub Exercise 1 Description
+## Exercise 2.1 - Setup Document Information Extraction Service and UI
 
 After completing these steps you will have created...
 
@@ -16,7 +16,7 @@ response->set_text( |Hello ABAP World! | ).
 
 
 
-## Exercise 2.2 Sub Exercise 2 Description
+## Exercise 2.2 - Upload a document for Extraction using UI Application
 
 After completing these steps you will have...
 
@@ -34,6 +34,13 @@ READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
 
 2.	Click here.
 <br>![](/exercises/ex2/images/02_02_0010.png)
+
+## Exercise 2.3 - Visualize and Correct Extraction Results on UI Application
+
+## Exercise 2.4 - Upload Data through Rest API
+
+## Exercise 2.5 - Upload Document through Rest API to encrich the extraction results with Supplier Data
+
 
 ## Summary
 
