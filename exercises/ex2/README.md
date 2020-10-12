@@ -85,9 +85,42 @@ You'll notice that the document status has change to **CONFIRMED**.
 <br>![](/exercises/ex2/images/02_03_10.png)
 
 
-## Exercise 2.4 - Upload Data through Rest API
+## Exercise 2.4 - Get Auth Token to use Document Information Extraction Rest API
 
-## Exercise 2.5 - Upload Document through Rest API to encrich the extraction results with Supplier Data
+Follow this [tutorial](https://developers-qa.sap.com/tutorials/cp-aibus-dox-web-oauth-token.html)
+
+Keep the tab open since we'll need access token in next steps
+
+## Excercise 2.5 - Get Extraction Results of Document using Rest API
+
+You will use Swagger UI, via any web browser, to call the Document Information Extraction APIs. Swagger UI allows developers to effortlessly interact and try out every single operation an API exposes for easy consumption. For more information, see [Swagger UI](https://swagger.io/tools/swagger-ui/).
+
+In the service key you created for Document Information Extraction in the previous tutorial: [Set Up Account for Document Information Extraction](https://developers-qa.sap.com/tutorials/cp-aibus-dox-service-instance-booster.html), you should find (outside the uaa section of the service key) an entry called url and another entry called swagger (as highlighted in the image below).
+
+1. To access the Document Information Extraction Swagger UI, add the swagger value (**/document-information-extraction/v1**) to the url value, paste it in any web browser and press Enter.
+<br>![](/exercises/ex2/images/02_05_1.png)
+
+2. To be able to use the Swagger UI endpoints you need to authorize yourself. In the top right corner, click **Authorize**.
+<br>![](/exercises/ex2/images/02_05_2.png)
+
+3. Get the access_token value created in the previous exercise: Get Auth Token to use Document Information Extraction Rest API, then add **bearer** in front of it, and enter in the **Value** field.
+
+```
+bearer <access_token>
+```
+<br>![](/exercises/ex2/images/02_05_3.png)
+
+4. Click **Authorize**, and then click **Close**.
+<br>![](/exercises/ex2/images/02_05_4.png)
+
+5. See List of Extraction Jobs.
+
+6. Get Extraction Results for **twitter.pdf** in Json Format.
+
+
+## Exercise 2.5 - Upload Supplier Data for matching
+
+## Exercise 2.6 - Upload Document through Rest API to encrich the extraction results with Supplier Data
 
 
 ## Summary
