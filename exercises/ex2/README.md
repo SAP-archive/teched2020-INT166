@@ -104,7 +104,6 @@ In the service key you created for Document Information Extraction in the previo
 <br>![](/exercises/ex2/images/02_05_2.png)
 
 3. Get the access_token value created in the previous exercise: Get Auth Token to use Document Information Extraction Rest API, then add **bearer** in front of it, and enter in the **Value** field.
-
 ```
 bearer <access_token>
 ```
@@ -113,9 +112,32 @@ bearer <access_token>
 4. Click **Authorize**, and then click **Close**.
 <br>![](/exercises/ex2/images/02_05_4.png)
 
-5. See List of Extraction Jobs.
+5. Expand the **GET /document/jobs** endpoint and click **Try it Out**.
+<br>![](/exercises/ex2/images/02_05_5.png)
 
-6. Get Extraction Results for **twitter.pdf** in Json Format.
+6. Input value `default` in **clientId** parameter and click on **Execute**.
+<br>![](/exercises/ex2/images/02_05_6.png)
+
+7. Check the **Response Body**, it will contain list of jobs in json format.
+<br>![](/exercises/ex2/images/02_05_7.png)
+
+8. In the **Response Body**, find the document with `"status": "CONFIRMED"`, you'll find that this is thr same **twitter.pdf** that we confirmed in Excersice 2.3.
+<br>![](/exercises/ex2/images/02_05_8.png)
+
+9. Copy the value corresponding to `id` for **twitter.pdf**.
+<br>![](/exercises/ex2/images/02_05_9.png)
+
+10. Collapse **GET /document/jobs** endpoint and Expand the **GET /document/jobs/{id}** endpoint.
+
+11. Click **Try it Out**
+<br>![](/exercises/ex2/images/02_05_11.png)
+
+12. Paste the value of `id` copied in step 9 into the **id** parameter and click on **Execute**.
+<br>![](/exercises/ex2/images/02_05_12.png)
+
+13. Check the **Reponse Body**, you'll find the information about job like `filename`, `status` etc. `headerFields` contains extraction results of Header fields. `lineItems` will contains results for Line items.
+<br>![](/exercises/ex2/images/02_05_13a.png)
+<br>![](/exercises/ex2/images/02_05_13b.png)
 
 
 ## Exercise 2.5 - Upload Supplier Data for matching
