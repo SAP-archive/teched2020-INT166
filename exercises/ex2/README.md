@@ -6,7 +6,7 @@ In this exercise, we will use Document Information Extraction Service to do foll
 - Correct and Confirm Extracted information using UI
 - Retrive Extracted Information Using Rest API
 - Upload Supplier Master Data for Invoices
-- Upload document for extraction using Rest API and enable enrichments for matching suppier id with Sender information
+- Upload document for extraction using Rest API and enable enrichments for matching supplier id with Sender information
 
 ## Exercise 2.1 - Setup Document Information Extraction Service and UI
 
@@ -51,7 +51,7 @@ Status changes from PENDING to READY. This means the selected header fields and 
 
 ## Exercise 2.3 - Visualize, Correct Extraction Results and Confirm Document using UI Application
 
-After completing these stepds you will have understand how the UI Application can be used to correct extraction results and Flag them after a manual verification is done by the user.
+After completing these steps you will have understand how the UI Application can be used to correct extraction results and Flag them after a manual verification is done by the user.
 
 1. Click on **twitter.pdf (Invoice)** in the Documents list to open the Preview if the document.
 
@@ -59,7 +59,7 @@ After completing these stepds you will have understand how the UI Application ca
 2. Click on the **Extraction Results** Button to view the extracted information.
 <br>![](/exercises/ex2/images/02_03_2.png)
 
-3. Check the extracted extracted Header Fields and Line Items.
+3. Check the extracted Header Fields and Line Items.
 <br>![](/exercises/ex2/images/02_03_3.png)
 
 4. Click on input field label **Sender Bank Account** to highlight location from where the value is extracted from in Preview.
@@ -117,7 +117,7 @@ In the service key you created for Document Information Extraction in the previo
 7. Check the **Response Body**, it will contain list of jobs in json format.
 <br>![](/exercises/ex2/images/02_05_7.png)
 
-8. In the **Response Body**, find the document with `"status": "CONFIRMED"`, you'll find that this is thr same **twitter.pdf** that we confirmed in Excersice 2.3.
+8. In the **Response Body**, find the document with `"status": "CONFIRMED"`, you'll find that this is the same **twitter.pdf** that we confirmed in Exercise 2.3.
 <br>![](/exercises/ex2/images/02_05_8.png)
 
 9. Copy the value corresponding to `id` for **twitter.pdf**.
@@ -322,7 +322,7 @@ In the service key you created for Document Information Extraction in the previo
 <br>![](/exercises/ex2/images/02_06_10.png)
 
 
-## Exercise 2.7 - Upload Document through Rest API to encrich the extraction results with Supplier Data
+## Exercise 2.7 - Upload Document through Rest API to enrich the extraction results with Supplier Data
 
 1. Expand the **POST /document/jobs** endpoint and click **Try it out**.
 <br>![](/exercises/ex2/images/02_07_1.png)
