@@ -139,9 +139,195 @@ bearer <access_token>
 <br>![](/exercises/ex2/images/02_05_13b.png)
 
 
-## Exercise 2.5 - Upload Supplier Data for matching
+## Exercise 2.6 - Upload Supplier Data for matching
 
-## Exercise 2.6 - Upload Document through Rest API to encrich the extraction results with Supplier Data
+1. Expand the **POST /data/jobs** endpoint and click **Try it out**.
+<br>![](/exercises/ex2/images/02_06_1.png)
+
+2. Define the data in the payload field, so that the system knows which extracted field (using, for example, supplier IDs from master data) should be enriched. The date is below.
+```json
+{
+   "value":[
+      {
+         "id":"BE0001",
+         "name":"Umbro LLC",
+         "accountNumber":"",
+         "address1":"15 Sports Goods Street, London UD12 3TY",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"UK8080808080",
+         "taxId":""
+      },
+      {
+         "id":"BE0002",
+         "name":"Twitter UK",
+         "accountNumber":"",
+         "address1":"15 Tweetdrive, Worthing BN12 3NX",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"GB34 5654 33456 3456 4565 35",
+         "taxId":""
+      },
+      {
+         "id":"BE0003",
+         "name":"RC Consulting LLC",
+         "accountNumber":"",
+         "address1":"15 Enterprise Lane, Boston, MA 02125",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"US11 1111 1111 2222 33",
+         "taxId":""
+      },
+      {
+         "id":"BE0004",
+         "name":"Norsk Folkehjelp",
+         "accountNumber":"",
+         "address1":"Stortorvet 100, 0255 OSLO Ministry of Health Aristotelous 17 Athina 104 33 Greece",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"NO80 8080 8080 8080 80",
+         "taxId":""
+      },
+      {
+         "id":"BE0005",
+         "name":"NSYFAC Naval Facilities Engineering Command",
+         "accountNumber":"",
+         "address1":"Military Base 15, D.C. 65472-8326 US Command",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"US67 6767 6767 6767 6767 67",
+         "taxId":""
+      },
+      {
+         "id":"BE0006",
+         "name":"Beijing 2008 OOC",
+         "accountNumber":"",
+         "address1":"15 Sports Goods Street, Bejing UD12 3TY",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"CN80 8080 8080 8080 8080 80",
+         "taxId":""
+      },
+      {
+         "id":"BE0007",
+         "name":"Chinese Blogger Conference",
+         "accountNumber":"",
+         "address1":"Soho Tower, 25 Hart Avenue, Hong Kong",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"CN36 9369 3693 6936 9369 36",
+         "taxId":""
+      },
+      {
+         "id":"BE0008",
+         "name":"Engenharia Ambiental",
+         "accountNumber":"",
+         "address1":"Service Drive 15, 18767 Manchester",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"GB27 2789 2789 2789 2789 89",
+         "taxId":""
+      },
+      {
+         "id":"BE0009",
+         "name":"Flickr",
+         "accountNumber":"",
+         "address1":"Entrepeneurweg 15, 54321 Neustadt",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"DE28 4321 4321 4321 4321 21",
+         "taxId":""
+      },
+      {
+         "id":"BE0010",
+         "name":"guru shop",
+         "accountNumber":"",
+         "address1":"Expertenweg 15, 90120 Gláubighausen",
+         "address2":"",
+         "city":"",
+         "countryCode":"",
+         "postalCode":"",
+         "state":"",
+         "email":"",
+         "phone":"",
+         "bankAccount":"DE12 3412 3412 3412 34",
+         "taxId":""
+      }
+   ]
+}
+```
+<br>![](/exercises/ex2/images/02_06_2.png)
+
+3. Choose the enrichment data **type** value `businessEntity`.
+
+4. Enter **clientId** as `default` .
+
+5. Choose the **subtype** value `supplier`.
+
+6. Click **Execute**.
+<br>![](/exercises/ex2/images/02_06_6.png)
+
+7. You should receive a response like the following with status PENDING, copy the `id` from the Response body to see the result of the enrichment data status in the next step.
+<br>![](/exercises/ex2/images/02_06_7.png)
+
+8. Expand the **GET /data/jobs/{id}** endpoint and click **Try it out**.
+<br>![](/exercises/ex2/images/02_06_8.png)
+
+9. Paste the `id` copied in step 8, in `id` parameter and click **Execute**
+<br>![](/exercises/ex2/images/02_06_9.png)
+
+10. You should receive a response like the following with status `SUCCESS`. If it's still `PENDING` try again in some time.
+<br>![](/exercises/ex2/images/02_06_10.png)
+
+
+## Exercise 2.7 - Upload Document through Rest API to encrich the extraction results with Supplier Data
+
+
 
 
 ## Summary

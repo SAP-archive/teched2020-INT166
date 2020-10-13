@@ -2,7 +2,7 @@
 
 In this exercise, we will create...
 
-## Exercise 1.1 Sub Exercise 1 Description
+## Exercise 1.1 - Setup Document Classification Service
 
 After completing these steps you will have created...
 
