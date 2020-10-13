@@ -324,7 +324,64 @@ In the service key you created for Document Information Extraction in the previo
 
 ## Exercise 2.7 - Upload Document through Rest API to encrich the extraction results with Supplier Data
 
+1. Expand the **POST /document/jobs** endpoint and click **Try it out**.
+<br>![](/exercises/ex2/images/02_07_1.png)
 
+2. Choose one of the invoice document file you want to enrich for **file** parameter.
+<br>![](/exercises/ex2/images/02_07_2.png)
+
+3. In **options**, enter the list of fields to be extracted from the uploaded file, the **clientId** as `default`, the **documentType** as `invoice`, the enrichment data **type** as `businessEntity` and **subtype** as `supplier`. The Payload will be as following:
+```json
+{
+   "extraction":{
+      "headerFields":[
+         "documentNumber",
+         "purchaseOrderNumber",
+         "netAmount",
+         "senderAddress",
+         "senderName",
+         "senderBankAccount",
+         "grossAmount",
+         "currencyCode",
+         "documentDate",
+         "taxAmount",
+         "receiverName",
+         "receiverAddress",
+         "paymentTerms"
+      ],
+      "lineItemFields":[
+         "description",
+         "netAmount",
+         "quantity",
+         "unitPrice"
+      ]
+   },
+   "clientId":"default",
+   "documentType":"invoice",
+   "enrichment":{
+      "sender":{
+         "top":5,
+         "type":"businessEntity",
+         "subtype":"supplier"
+      }
+   }
+}
+```
+<br>![](/exercises/ex2/images/02_07_3.png)
+
+4. Click **Execute**.
+
+5. You'll get a response with **status** as `PENDING`. Copy the value of `id` in response payload.
+<br>![](/exercises/ex2/images/02_07_5.png)
+
+6. Expand the **GET /document/jobs/{id}** endpoint, and click **Try it out**.
+<br>![](/exercises/ex2/images/02_07_6.png)
+
+7. Paste the id copied in step 5 as the **id** in parameter. click on **Execute**.
+<br>![](/exercises/ex2/images/02_07_7.png)
+
+8. Check the response body, one of the extracted fields is the sender name with value `Twitter UK,`. This information is enriched with the supplier ID enrichment data created in **excersice 2.6 - step 2**. The prediction suggests the supplier ID BE0002 (from sender name Twitter UK).
+<br>![](/exercises/ex2/images/02_07_8.png)
 
 
 ## Summary
