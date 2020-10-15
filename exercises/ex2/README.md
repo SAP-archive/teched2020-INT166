@@ -13,6 +13,7 @@ In this exercise, we will use Document Information Extraction Service to do foll
 After completing below step you will have access for Document Information Extraction Service and its UI Application
 
 1. Follow this [tutorial](https://developers-qa.sap.com/tutorials/cp-aibus-dox-service-instance-booster.html) to create instance of Document Informaiton Extraction Service.
+
 2. Follow this [tutorial](https://developers-qa.sap.com/tutorials/cp-aibus-dox-ui-sub.html) to Subscribe Document Information Extraction UI.
 
 Now that we have access to UI Application, we'll goto the UI Application for our next excersice.
@@ -33,7 +34,7 @@ Following step will guide you on how to use Document Information Extraction Serv
 4. Click **Step 2** button.
    <br>![](/exercises/ex2/images/02_02_4.png)
 
-5. In Step 2, select the **Header Fields** you want to extract from the invoice documents. We'll extracting following header fields from invoice documents.
+5. In Step 2, select the **Header Fields** you want to extract from the invoice documents. We'll be extracting following header fields from invoice documents.
    - Document Number
    - Document Date
    - Purchase Order Number
@@ -51,7 +52,7 @@ Following step will guide you on how to use Document Information Extraction Serv
    Click **Step 3** button.
    <br>![](/exercises/ex2/images/02_02_5.png)
 
-6. In Step 3, select the **Line Items Fields** you want to extract from the invoice documents. We'll extraction following line items fields from invoice documents.
+6. In Step 3, select the **Line Items Fields** you want to extract from the invoice documents. We'll be extracting following line items fields from invoice documents.
    - Description
    - Amount
    - Quantity
@@ -63,7 +64,7 @@ Following step will guide you on how to use Document Information Extraction Serv
 7. Review your selection. Click **Confirm** button.
    <br>![](/exercises/ex2/images/02_02_7.png)
 
-8. You see the Document Name, Upload Date and Status of the documents you have just uploaded.
+8. You'll see the Document Name, Upload Date and Status of the documents you have just uploaded.
    <br>![](/exercises/ex2/images/02_02_8.png)
    Status changes from PENDING to READY. This means the selected header fields and line items have been extracted, and the extraction results are ready to be validated and changed if necessary. If status changes from PENDING to FAILED, this means it was not possible to get the extraction results, and you need to upload the document once again.
    <br>![](/exercises/ex2/images/02_02_9.png)
@@ -78,7 +79,6 @@ Now that you have uploaded document for extraction in the next section we'll see
 Following Steps will guide to use UI Application for viewing and correcting extraction results of document and mark it as Confirmed.
 
 1. Click on **twitter.pdf (Invoice)** in the Documents list to open the Preview if the document.
-
 
 2. Click on the **Extraction Results** Button to view the extracted information.
    <br>![](/exercises/ex2/images/02_03_2.png)
@@ -114,6 +114,7 @@ Now that you've marked **twitter.pdf** as CONFIRMED it means that values of Head
 ## Exercise 2.4 - Get Auth Token to use Document Information Extraction Rest API
 
 In order to use the Rest API of Document Information Extraction we'll need the Auth Token.
+
 Follow this [tutorial](https://developers-qa.sap.com/tutorials/cp-aibus-dox-web-oauth-token.html) to get the Auth Token.
 
 NOTE: Keep the tab open since we'll need access token in next steps
