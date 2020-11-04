@@ -119,7 +119,7 @@ Follow this [tutorial](https://developers-qa.sap.com/tutorials/cp-aibus-dox-web-
 
 NOTE: Keep the tab open since we'll need access token in next steps
 
-## Excercise 2.5 - Get Extraction Results of Document using Rest API
+## Exercise 2.5 - Get Extraction Results of Document using Rest API
 
 You will use Swagger UI, via any web browser, to call the Document Information Extraction Rest APIs. Swagger UI allows developers to effortlessly interact and try out every single operation an API exposes for easy consumption. For more information, see [Swagger UI](https://swagger.io/tools/swagger-ui/).
 
