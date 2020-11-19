@@ -11,7 +11,7 @@ Learn how to use the Document Classification and Document Information Extraction
 ## Exercises
 
 - [Get an SAP cloud platform trial account](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
-- [Exercise 1 - Document Classification - Jupyterhub client library exercises](https://mybinder.org/v2/gh/SAP-samples/teched2020-INT166/master?filepath=teched_dc.ipynb)
+- [Exercise 1 - Document Classification - Jupyterhub client library exercises](https://mybinder.org/v2/gh/SAP-samples/teched2020-INT166/main?filepath=teched_dc.ipynb)
 - [Exercise 2 - Document Information Extraction](exercises/ex2/)
     - [Exercise 2.1 - Setup Document Information Extraction Service and UI](exercises/ex2#exercise-21---setup-document-information-extraction-service-and-ui)
     - [Exercise 2.2 - Upload a document for Extraction using UI Application](exercises/ex2#exercise-22---upload-documents-for-extraction-using-ui-application)
