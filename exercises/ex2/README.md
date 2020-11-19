@@ -15,6 +15,7 @@ After completing below step you will have access for Document Information Extrac
 1. Follow this [tutorial](https://developers.sap.com/tutorials/cp-aibus-dox-service-instance-booster.html) to create instance of Document Informaiton Extraction Service and Subscribe to UI.
 
 Now that we have access to UI Application, we'll goto the UI Application for our next excersice.
+**Make sure you also download the service key, since we'll be using it in subsequent exersice**
 
 ## Exercise 2.2 - Upload documents for Extraction using UI Application
 
@@ -115,6 +116,8 @@ Now that you've marked **twitter.pdf** as CONFIRMED it means that values of Head
 
 In order to use the Rest API of Document Information Extraction we'll need the Auth Token.
 
+Here we'll will need the service key that you downloaded in Exercise 2.1.
+
 Follow this [tutorial](https://developers.sap.com/tutorials/cp-aibus-dox-web-oauth-token.html) to get the Auth Token.
 
 NOTE: Keep the tab open since we'll need access token in next steps
@@ -123,7 +126,7 @@ NOTE: Keep the tab open since we'll need access token in next steps
 
 You will use Swagger UI, via any web browser, to call the Document Information Extraction Rest APIs. Swagger UI allows developers to effortlessly interact and try out every single operation an API exposes for easy consumption. For more information, see [Swagger UI](https://swagger.io/tools/swagger-ui/).
 
-In the service key you created for Document Information Extraction in the previous tutorial: [Set Up Account for Document Information Extraction](https://developers.sap.com/tutorials/cp-aibus-dox-service-instance-booster.html), you should find (outside the uaa section of the service key) an entry called url and another entry called swagger (as highlighted in the image below).
+In the service key you downloaded for Document Information Extraction in Exercise 2.1, you should find (outside the uaa section of the service key) an entry called url and another entry called swagger (as highlighted in the image below).
 
 1. To access the Document Information Extraction Swagger UI, add the swagger value (**/document-information-extraction/v1**) to the url value, paste it in any web browser and press Enter.
    <br>![](/exercises/ex2/images/02_05_1.png)
