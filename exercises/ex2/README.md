@@ -22,7 +22,7 @@ Following step will guide you on how to use Document Information Extraction Serv
 
 **Please make sure you have downloaded the documents in [data](/data) folder**
 
-1.	In the top right, click + (Upload a new document) and choose all the pdf documents in [data/invoice](date/Invoice) folder
+1.	In the top right, click + (Upload a new document) and choose all the pdf documents in [data/invoice](/date/Invoice) folder
    <br>![](/exercises/ex2/images/02_02_1.png)
 
 2.	In the Select Document screen, drop Invoice files directly or click + to upload one or more document files.
