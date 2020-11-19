@@ -440,3 +440,7 @@ You've now completed the Exercise and learned
 - How to consume Document Information Extraction Service using Rest API.
 - How to visualize and validated extraction results using the UI Application.
 
+Useful Links 
+- [Tutorials](https://developers.sap.com/tutorial-navigator.html?tag=products:technology-platform/sap-ai-business-services/document-information-extraction) for Document Information Extraction
+- [Help Page](https://help.sap.com/viewer/product/DOCUMENT_INFORMATION_EXTRACTION) for Document Information Extraction
+
