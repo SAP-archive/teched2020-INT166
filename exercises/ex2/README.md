@@ -87,7 +87,7 @@ Following Steps will guide to use UI Application for viewing and correcting extr
 3. Check the extracted Header Fields and Line Items.
    <br>![](/exercises/ex2/images/02_03_3.png)
 
-4. Click on input field label **Sender Bank Account** to highlight location from where the value is extracted from in Preview.
+4. Click on input field label **Supplier Bank Account** to highlight location from where the value is extracted from in Preview.
    <br>![](/exercises/ex2/images/02_03_4.png)
 
 5. Expand First Line Item and click on **Description** to to highlight location from where the value is extracted from in Preview.
@@ -363,7 +363,7 @@ After completing below steps you will have Supplier master data uploaded to the 
 10. You should receive a response like the following with status `SUCCESS`. If it's still `PENDING` try again in some time.
    <br>![](/exercises/ex2/images/02_06_10.png)
 
-Now that you have uploaded the supplier data, we can use the service to find `id` of the Supplier that matches the extracted sender information for invoices.
+Now that you have uploaded the supplier data, we can use the service to find `id` of the Supplier that matches the extracted Supplier information for invoices.
 
 ## Exercise 2.7 - Upload Document through Rest API to enrich the Extraction results with Supplier Data
 
@@ -379,7 +379,7 @@ In this exercise we will again use Swagger UI to upload a Invoice document along
 2. Choose one of the invoice document file you want to enrich for **file** parameter.
    <br>![](/exercises/ex2/images/02_07_2.png)
 
-3. In **options**, you'll enter the list of header and line items fields to be extracted from the uploaded file, the **clientId** as `default`, the **documentType** as `invoice`, the enrichment configuration to match **sender** information with data **type** as `businessEntity` and **subtype** as `supplier`. The Payload will be as following:
+3. In **options**, you'll enter the list of header and line items fields to be extracted from the uploaded file, the **clientId** as `default`, the **documentType** as `invoice`, the enrichment configuration to match **Supplier** information with data **type** as `businessEntity` and **subtype** as `supplier`. The Payload will be as following:
    ```json
    {
       "extraction":{
