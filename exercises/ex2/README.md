@@ -36,19 +36,19 @@ Following step will guide you on how to use Document Information Extraction Serv
    <br>![](/exercises/ex2/images/02_02_4.png)
 
 5. In Step 2, select the **Header Fields** you want to extract from the invoice documents. We'll be extracting following header fields from invoice documents.
-   - Document Number
-   - Document Date
+   - Invoice Number
+   - Invoice Date
    - Purchase Order Number
-   - Sub Total Amount
-   - Total Amount
+   - Net Amount
+   - Gross Amount
    - Tax Amount
-   - Currency Code
-   - Reciever Name
-   - Reviever Address
+   - Currency
+   - Buyer Name
+   - Buyer Address
    - Payment Terms
-   - Sender Bank Account
-   - Sender Name
-   - Server Address
+   - Supplier Bank Account
+   - Supplier Name
+   - Supplier Address
 
    Click **Step 3** button.
    <br>![](/exercises/ex2/images/02_02_5.png)
