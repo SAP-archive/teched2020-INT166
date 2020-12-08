@@ -1,4 +1,4 @@
-sap-document-classification-client==0.1.8
+sap-document-classification-client==0.1.15
 numpy==1.17.2
 matplotlib==3.1.1
 scikit-learn==0.21.3
