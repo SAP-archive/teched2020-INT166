@@ -1,5 +1,9 @@
 # INT166 - Classify Business Documents and Extract Information
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-INT166)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-INT166)
+
+https://github.com/SAP-samples/teched2020-INT204
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2020 session called INT166 - Classify Business Documents and Extract Information.
